@@ -1,6 +1,6 @@
 import subprocess, os, shlex
 
-class Mongo_Manager:
+class Mongo_Shell:
     def __init__(self, data_path):
         self.data_path = data_path
 
@@ -15,5 +15,5 @@ if __name__ == '__main__':
     path1 = '/Users/richardyang/Desktop/Research/mongodb/data/'
     path2 = '/Users/richardyang/Desktop/Research/mongodb/bin/'
 
-    my_manager = Mongo_Manager(path1)
+    my_manager = Mongo_Shell(path1)
     my_manager.launch_mongodb(path2)
