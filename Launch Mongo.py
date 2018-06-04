@@ -10,10 +10,14 @@ class Mongo_Shell:
         self.test_connection = subprocess.Popen(shlex.split(mongo_path + 'mongo'))
         return self.mongod, self.test_connection
 
-
-if __name__ == '__main__':
+def main():
     path1 = '/Users/richardyang/Desktop/Research/mongodb/data/'
     path2 = '/Users/richardyang/Desktop/Research/mongodb/bin/'
 
     my_manager = Mongo_Shell(path1)
     my_manager.launch_mongodb(path2)
+    return 0
+
+
+if __name__ == '__main__':
+    main()
